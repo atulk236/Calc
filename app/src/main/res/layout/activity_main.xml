@@ -4,207 +4,302 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#757575"
+    android:background="#EAF2F8"
+    android:layout_gravity="fill_vertical"
     tools:context=".MainActivity">
+    <LinearLayout
+
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="fill_horizontal"
+        android:foregroundGravity="center_vertical"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
 
 
-    <TextView
-        android:id="@+id/input"
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="8dp"
-        android:background="#E0E0E0"
-        android:ems="15"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        <TextView
+            android:id="@+id/input"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:ems="19"
+            android:textAlignment="textEnd"
+            android:textColor="#000"
+            android:textSize="50sp"
+            android:textStyle="bold"
+
+
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="fill_horizontal"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
 
-    <Button
-        android:id="@+id/v7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:minWidth="80dp"
-        android:minHeight="75dp"
-        android:text="7"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="@id/input"
-        app:layout_constraintTop_toBottomOf="@+id/input" />
+            <Button
+                android:id="@+id/v7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:minWidth="95dp"
+                android:minHeight="135dp"
+                android:text="7"
+                android:textSize="24sp" />
 
-    <Button
-        android:id="@+id/v9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minWidth="80dp"
-        android:minHeight="75dp"
-        android:text="9"
-        android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/v8"
-        app:layout_constraintStart_toEndOf="@+id/v8" />
+            <Button
+                android:id="@+id/v8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:minWidth="95dp"
 
-    <Button
-        android:id="@+id/v8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minWidth="80dp"
-        android:minHeight="75dp"
+                android:minHeight="135dp"
 
-        android:text="8"
-        android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/v7"
-        app:layout_constraintStart_toEndOf="@+id/v7" />
+                android:text="8"
+                android:textSize="24sp" />
 
-    <Button
-        android:id="@+id/v4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minWidth="80dp"
-        android:minHeight="75dp"
-        android:text="4"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="@id/v7"
-        app:layout_constraintTop_toBottomOf="@+id/v7" />
 
-    <Button
-        android:id="@+id/v5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minWidth="80dp"
-        android:minHeight="75dp"
+            <Button
+                android:id="@+id/v9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:minWidth="95dp"
+                android:minHeight="135dp"
+                android:text="9"
 
-        android:text="5"
-        android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/v4"
-        app:layout_constraintStart_toEndOf="@+id/v4" />
+                android:textSize="24sp" />
 
-    <Button
-        android:id="@+id/v6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minWidth="80dp"
-        android:minHeight="75dp"
-        android:text="6"
-        android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/v5"
-        app:layout_constraintStart_toEndOf="@+id/v5" />
+            <Button
+                android:id="@+id/div"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
 
-    <Button
-        android:id="@+id/v1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minWidth="80dp"
-        android:minHeight="75dp"
-        android:text="1"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="@id/v4"
-        app:layout_constraintTop_toBottomOf="@+id/v4" />
+                android:minWidth="95dp"
+                android:minHeight="135dp"
+                android:text="/"
+                android:textColor="#303F9F"
+                android:textSize="24sp" />
 
-    <Button
-        android:id="@+id/v2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minWidth="80dp"
-        android:minHeight="75dp"
 
-        android:text="2"
-        android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/v1"
-        app:layout_constraintStart_toEndOf="@+id/v1" />
+        </LinearLayout>
 
-    <Button
-        android:id="@+id/v3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minWidth="80dp"
-        android:minHeight="75dp"
-        android:text="3"
-        android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/v2"
-        app:layout_constraintStart_toEndOf="@+id/v2" />
 
-    <Button
-        android:id="@+id/clear"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minWidth="80dp"
-        android:minHeight="75dp"
-        android:text="C"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="@id/v1"
-        app:layout_constraintTop_toBottomOf="@+id/v1" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
 
-    <Button
-        android:id="@+id/v0"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minWidth="80dp"
-        android:minHeight="75dp"
-        android:text="0"
-        android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/clear"
-        app:layout_constraintStart_toEndOf="@+id/clear" />
+            >
 
-    <Button
-        android:id="@+id/equal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minWidth="80dp"
-        android:minHeight="75dp"
+            <Button
+                android:id="@+id/v5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:minWidth="95dp"
+                android:minHeight="135dp"
 
-        android:text="="
-        android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/v0"
-        app:layout_constraintStart_toEndOf="@+id/v0" />
 
-    <Button
-        android:id="@+id/div"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minWidth="80dp"
-        android:minHeight="75dp"
-        android:text="/"
-        android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/v9"
-        app:layout_constraintStart_toEndOf="@+id/v9" />
+                android:text="5"
+                android:textSize="24sp" />
 
-    <Button
-        android:id="@+id/multi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minWidth="80dp"
-        android:minHeight="75dp"
-        android:text="*"
-        android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/v6"
-        app:layout_constraintStart_toEndOf="@+id/v6" />
+            <Button
+                android:id="@+id/v6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:minWidth="95dp"
+                android:minHeight="135dp"
 
-    <Button
-        android:id="@+id/sub"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minWidth="80dp"
-        android:minHeight="75dp"
+                android:text="6"
+                android:textSize="24sp" />
 
-        android:text="-"
-        android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/v3"
-        app:layout_constraintStart_toEndOf="@+id/v3" />
+            <Button
+                android:id="@+id/v4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:minWidth="95dp"
+                android:minHeight="135dp"
 
-    <Button
-        android:id="@+id/add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minWidth="80dp"
-        android:minHeight="75dp"
-        android:text="+"
-        android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/equal"
-        app:layout_constraintStart_toEndOf="@+id/equal" />
+                android:text="4"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/multi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:minWidth="95dp"
+                android:minHeight="135dp"
+                android:text="*"
+
+                android:textColor="#303F9F"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/v1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:minWidth="95dp"
+                android:minHeight="135dp"
+
+                android:text="1"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/v2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:minWidth="95dp"
+                android:minHeight="135dp"
+
+                android:text="2"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/v3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:minWidth="95dp"
+                android:minHeight="135dp"
+
+                android:text="3"
+                android:textSize="24sp" />
+
+
+            <Button
+                android:id="@+id/sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:minWidth="95dp"
+                android:minHeight="135dp"
+                android:text="-"
+
+
+                android:textColor="#303F9F"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:minWidth="95dp"
+                android:minHeight="135dp"
+
+                android:text="C"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/v0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:minWidth="95dp"
+                android:minHeight="135dp"
+                android:text="0"
+
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/equal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:minWidth="95dp"
+                android:minHeight="135dp"
+
+                android:text="="
+                android:textSize="24sp" />
+
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:minWidth="95dp"
+
+                android:minHeight="135dp"
+                android:text="+"
+                android:textColor="#303F9F"
+
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
 
 
 </android.support.constraint.ConstraintLayout>
